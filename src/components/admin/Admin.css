@@ -1,4 +1,52 @@
 .container {
   margin: auto;
-  width: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.nav_link {
+  font-size: 19px;
+  line-height: 18px;
+  text-align: center;
+  color: #119da4;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 55px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.contact_btn {
+  width: 220px;
+  height: 50px;
+  background-color: #119da4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: white;
+  padding: 0;
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone_icon {
+  margin-top: 3px;
 }

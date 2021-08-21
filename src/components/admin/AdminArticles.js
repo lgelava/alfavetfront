@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { getPostsHandler } from "../../redux/postActions";
-import "./Posts.css";
-import PostItem from "./PostItem";
-import Pagination from "./Pagination";
+import "./AdminArticles.css";
+import PostItemAdmin from "./PostItemAdmin";
 
-const Posts = () => {
+const AdminArticles = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,7 +22,7 @@ const Posts = () => {
     <>
       <div className="posts_outer">
         {posts.map((post) => (
-          <PostItem post={post} key={post._id} />
+          <PostItemAdmin post={post} key={post._id} />
         ))}
       </div>
       {/* <Pagination /> */}
@@ -31,4 +30,4 @@ const Posts = () => {
   );
 };
 
-export default Posts;
+export default AdminArticles;
